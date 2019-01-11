@@ -58,7 +58,7 @@ Please check the [test_main.py](/test/test_main.py) from this repository. Below 
 #### NTLM Authentication(Kerberos will not work for this library)
 ```python
     from osisoft.pidevclub.piwebapi.pi_web_api_client import PIWebApiClient
-    client = PIWebApiClient("https://test.osisoft.com/piwebapi", useNTLM=True, username="username", password"password")  
+    client = PIWebApiClient("https://test.osisoft.com/piwebapi", useNTLM=True, username="username", password="password")  
 ``` 
 
 
