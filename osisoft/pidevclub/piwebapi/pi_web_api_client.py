@@ -65,20 +65,20 @@ from osisoft.pidevclub.piwebapi.web_id.web_id_helper import WebIdHelper
 
 class PIWebApiClient(object):
     __baseUrl = None
-    __useKerberos = True
+    __useNTLM = True
     __username = None
     __password = None
-    __verifySsl = True
+    __verifySsl = False
     __config = None
-    def __init__(self, baseUrl, useKerberos = True, username = None, password = None, verifySsl = True):
+    def __init__(self, baseUrl, useNTLM = True, username = None, password = None, verifySsl = False):
         self.__baseUrl = baseUrl
-        self.__useKerberos = useKerberos
+        self.__useNTLM = useNTLM
         self.__username = username
         self.__password = password
         self.__verifySsl = verifySsl
         self.__api_client = api_client.ApiClient(self.__baseUrl, self.__verifySsl)
-        if (self.__useKerberos == True):
-            self.__api_client.set_kerberos_auth()
+        if (self.__useNTLM == True):
+            self.__api_client.set_NTLM_auth(self.__username, self.__password)
         else:
             self.__api_client.set_basic_auth(self.__username, self.__password)
 
@@ -135,8 +135,8 @@ class PIWebApiClient(object):
         return self.__baseUrl
 
     @property
-    def useKerberos(self):
-        return self.__useKerberos
+    def useNTLM(self):
+        return self.__useNTLM
 
     @property
     def verifySsl(self):
