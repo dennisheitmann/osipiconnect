@@ -11,8 +11,8 @@ Name | Type | Description | Notes
 ------------- | ------------- | ------------- | -------------
 **baseUrl** | **str**| PI Web API base service url. | [required]
 **useNTLM** | **bool**| Select True for NTLM auth or False for Basic auth. | [required]
-**username** | **str**| The username for basic authentication to authenticate against PI Web API. | [required]
-**password** | **str**| The password for basic authentication to authenticate against PI Web API. | [required]
+**username** | **str**| The username to authenticate against PI Web API. | [required]
+**password** | **str**| The password to authenticate against PI Web API. | [required]
 **verifySsl** | **bool**| Verify SSL certificate.| [required]
 
 ## **Properties**
