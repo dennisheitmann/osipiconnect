@@ -6,7 +6,7 @@ This repository has the source code package of the PI Web API client libraries f
 
 ## Requirements
 
- - PI Web API 2018 installed within your domain using Kerberos or Basic Authentication. If you are using an older version, some methods might not work.
+ - PI Web API 2018 installed within your domain using Kerberos(NTLM fallback) or Basic Authentication. If you are using an older version, some methods might not work.
  - Python 2.7 and 3.4+
 
 ## Installation
@@ -52,13 +52,13 @@ Please check the [test_main.py](/test/test_main.py) from this repository. Below 
 #### Basic Authentication
 ```python
     from osisoft.pidevclub.piwebapi.pi_web_api_client import PIWebApiClient
-    client = PIWebApiClient("https://test.osisoft.com/piwebapi", useKerberos=False, username="username", password="password", verifySsl=true)  
+    client = PIWebApiClient("https://test.osisoft.com/piwebapi", useNTLM=False, username="username", password="password", verifySsl=true)  
 ``` 
 
 #### NTLM Authentication(Kerberos will not work for this library)
 ```python
     from osisoft.pidevclub.piwebapi.pi_web_api_client import PIWebApiClient
-    client = PIWebApiClient("https://test.osisoft.com/piwebapi", useNTLM=True, username="", password"")  
+    client = PIWebApiClient("https://test.osisoft.com/piwebapi", useNTLM=True, username="username", password"password")  
 ``` 
 
 
