@@ -70,7 +70,7 @@ class PIWebApiClient(object):
     __password = None
     __verifySsl = False
     __config = None
-    def __init__(self, baseUrl, useNTLM = True, username = None, password = None, verifySsl = False):
+    def __init__(self, baseUrl, useNTLM = True, username = None, password = None, verifySsl = True):
         self.__baseUrl = baseUrl
         self.__useNTLM = useNTLM
         self.__username = username
