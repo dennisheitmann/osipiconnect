@@ -68,7 +68,7 @@ class PIWebApiClient(object):
     __useNTLM = True
     __username = None
     __password = None
-    __verifySsl = False
+    __verifySsl = True
     __config = None
     def __init__(self, baseUrl, useNTLM = True, username = None, password = None, verifySsl = True):
         self.__baseUrl = baseUrl
