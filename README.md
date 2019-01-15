@@ -12,6 +12,10 @@ This repository has the source code package of the PI Web API client libraries f
 ## Installation
 ### pip install
 
+```sh
+pip install osipiconnect
+```
+
 The python package is hosted on Github, you can install directly from Github
 
 
