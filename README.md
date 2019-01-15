@@ -20,7 +20,7 @@ The python package is hosted on Github, you can install directly from Github
 
 
 ```sh
-pip install git+https://github.com/vivekgoyanka/PI-Web-API-Client-Python
+pip install git+https://github.com/vivekgoyanka/osipiconnect
 ```
 
 You may need to run `pip` with root permission(for linux). If you are using Windows, remember to open the command prompt running as administrator. You must have Git installed on your machine.
