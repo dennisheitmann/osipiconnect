@@ -39,11 +39,11 @@ setup(
     include_package_data=True,
     license='MIT',
     author='Vivek',
-    author_email='vivek.goyanka.civ14@iitbhu.ac.in',
+    author_email='vivekgoyanka2010@gmail.com',
     classifiers=[
         'Development Status :: 5 - Production/Stable'
     ],
     long_description="""\
-    PI Web API client library for Python (2018)
+    PI Web API client library for Python (2018) modified to use NTLM instead of Kerberos
     """
 )
